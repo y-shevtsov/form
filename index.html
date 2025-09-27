@@ -15,23 +15,28 @@
 		<div class="auth-panel">
 			<div class="auth-box">
 				<div class="auth-tabs">
-					<button class="tab tab-active">Login</button>
-					<button class="tab">Register</button>
+					<input type="radio" name="auth-tab" id="login-tab" class="tab-input" checked>
+					<label for="login-tab" class="tab">Login</label>
+
+					<input type="radio" name="auth-tab" id="register-tab" class="tab-input">
+					<label for="register-tab" class="tab">Register</label>
 				</div>
 
 				<h1 class="auth-title">Login</h1>
 
 				<form class="auth-form">
-					<div class="field">
+					<label class="field">
 						<input type="email" placeholder="E-mail" class="input">
-					</div>
-					<div class="field">
+					</label>
+					<label class="field">
 						<input type="password" placeholder="Password" class="input">
-					</div>
+					</label>
 
 					<div class="form-options">
 						<label class="checkbox">
-							<input type="checkbox"> Remember Me
+							<input type="checkbox">
+							<span class="custom-checkbox"></span>
+							Remember Me
 						</label>
 						<a href="#" class="forgot-link">Forgot password?</a>
 					</div>
